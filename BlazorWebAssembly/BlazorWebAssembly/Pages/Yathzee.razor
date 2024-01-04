@@ -1,0 +1,306 @@
+﻿@page "/yathzee"
+@inject HttpClient Http
+
+<PageTitle Title="Yahtzee" />
+
+@using BlazorGames.Models.Yahtzee;
+@using BlazorGames.Models.Yahtzee.Enums;
+@using BlazorGames.Models.Common;
+@using BlazorWebAssembly.Pages.Partials;
+@code {
+    public DieCollection Dice { get; set; } = new DieCollection();
+
+    public PlayCollection PlaysMade { get; set; } = new PlayCollection();
+
+    public int TurnsRemaining { get; set; } = 13;
+
+    public int RollsRemaining { get; set; } = 3;
+
+    public bool IsStartOfTurn { get { return RollsRemaining >= 3; } }
+
+    public bool IsGameOver { get { return TurnsRemaining <= 0; } }
+
+    public bool ShowRules { get; set; }
+
+    public int TotalScore
+    {
+        get
+        {
+            if (PlaysMade.HasBonus())
+            {
+                return PlaysMade.GetTotal() + 35;
+            }
+            return PlaysMade.GetTotal();
+        }
+    }
+
+    public Yathzee()
+    {
+        Initialize();
+    }
+
+    public void Initialize()
+    {
+        Dice.Reset();
+
+        PlaysMade.Reset();
+        TurnsRemaining = 13;
+        RollsRemaining = 3;
+    }
+
+    public async Task RollDice()
+    {
+        Random rand = new Random();
+
+        var unheldDice = Dice.Dice.Where(x => x.IsHeld == false);
+
+        foreach (var die in unheldDice)
+        {
+            die.State = DieState.Rolling;
+        }
+
+        foreach (var die in unheldDice)
+        {
+            await Task.Delay(200);
+            die.State = DieState.Stopped;
+            die.Value = rand.Next(1, 7);
+            StateHasChanged();
+        }
+        RollsRemaining--;
+    }
+
+    public void NextTurn()
+    {
+        RollsRemaining = 3;
+        TurnsRemaining--;
+        Dice.ReleaseHold();
+    }
+
+    public bool CanMakePlay(PlayType type)
+    {
+        switch (type)
+        {
+            case PlayType.Ones:
+                return Dice.HasThreeOnes();
+
+            case PlayType.Twos:
+                return Dice.HasThreeTwos();
+
+            case PlayType.Threes:
+                return Dice.HasThreeThrees();
+
+            case PlayType.Fours:
+                return Dice.HasThreeFours();
+
+            case PlayType.Fives:
+                return Dice.HasThreeFives();
+
+            case PlayType.Sixes:
+                return Dice.HasThreeSixes();
+
+            case PlayType.Yahtzee:
+            case PlayType.BonusYahtzee:
+                return Dice.HasYahtzee();
+
+            case PlayType.ThreeOfAKind:
+                return Dice.HasThreeOfAKind();
+
+            case PlayType.FourOfAKind:
+                return Dice.HasFourOfAKind();
+
+            case PlayType.FullHouse:
+                return Dice.HasFullHouse();
+
+            case PlayType.SmallStraight:
+                return Dice.HasSmallStraight();
+
+            case PlayType.LargeStraight:
+                return Dice.HasLargeStraight();
+
+            case PlayType.Chance:
+                return true;
+
+            default: return false;
+        }
+    }
+
+    public void ClaimPlay(PlayType type)
+    {
+        switch (type)
+        {
+            case PlayType.Ones:
+                PlaysMade.Add(type, Dice.GetSumOf(1));
+                break;
+
+            case PlayType.Twos:
+                PlaysMade.Add(type, Dice.GetSumOf(2));
+                break;
+
+            case PlayType.Threes:
+                PlaysMade.Add(type, Dice.GetSumOf(3));
+                break;
+
+            case PlayType.Fours:
+                PlaysMade.Add(type, Dice.GetSumOf(4));
+                break;
+
+            case PlayType.Fives:
+                PlaysMade.Add(type, Dice.GetSumOf(5));
+                break;
+
+            case PlayType.Sixes:
+                PlaysMade.Add(type, Dice.GetSumOf(6));
+                break;
+
+            case PlayType.Yahtzee:
+                PlaysMade.Add(type, 50);
+                break;
+
+            case PlayType.BonusYahtzee:
+                PlaysMade.Add(type, 100);
+                break;
+
+            case PlayType.ThreeOfAKind:
+                PlaysMade.Add(type, Dice.GetOfAKindTotal(3));
+                break;
+
+            case PlayType.FourOfAKind:
+                PlaysMade.Add(type, Dice.GetOfAKindTotal(4));
+                break;
+
+            case PlayType.FullHouse:
+                PlaysMade.Add(type, 25);
+                break;
+
+            case PlayType.SmallStraight:
+                PlaysMade.Add(type, 30);
+                break;
+
+            case PlayType.LargeStraight:
+                PlaysMade.Add(type, 40);
+                break;
+
+            case PlayType.Chance:
+                PlaysMade.Add(type, Dice.Dice.Sum(x => x.Value));
+                break;
+        }
+
+        NextTurn();
+    }
+
+    public void ScratchPlay(PlayType type)
+    {
+        PlaysMade.Add(type, 0);
+        NextTurn();
+    }
+
+    public string GetRank()
+    {
+        if (!IsGameOver) return "Finish the game first!";
+
+        if (TotalScore <= 112) return "D";
+
+        if (TotalScore > 112 && TotalScore <= 168) return "C";
+
+        if (TotalScore > 168 && TotalScore <= 224) return "B";
+
+        if (TotalScore > 224 && TotalScore <= 280) return "A";
+
+        if (TotalScore > 280 && TotalScore <= 364) return "S";
+
+        if (TotalScore > 364) return "S+";
+
+        return "";
+    }
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            @for (int i = 0; i < Dice.Dice.Count; i++)
+            {
+                var x = i;
+                var die = Dice.Dice[x];
+                <YahtzeeDie Die="die" IsStartOfTurn="IsStartOfTurn"/>
+            }
+            <div class="row">
+                <div class="col">
+                    @if (RollsRemaining > 0 && !IsGameOver)
+                    {
+                        <button class="btn btn-primary" @onclick:preventDefault @onclick="@(() => RollDice())">Roll</button>
+                    }
+                    else if (IsGameOver)
+                    {
+                        <button class="btn btn-success" @onclick="@(() => Initialize())">Reset</button>
+                        <text>Thanks for playing!<br />Final score: @TotalScore <br />Rank: @GetRank()</text>
+                    }
+                    else
+                    {
+                        <button class="btn btn-primary disabled" @onclick:preventDefault @onclick="@(() => RollDice())">Roll</button><text>Please mark a score.</text>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col">
+                    <h4>Scorecard</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    Rolls Remaining This Turn: @RollsRemaining
+                </div>
+                <div class="col-4">
+                    Turns Remaining: @TurnsRemaining
+                </div>
+            </div>
+            <!-- Scorecard rows -->
+            @foreach (PlayType type in (PlayType[])Enum.GetValues(typeof(PlayType)))
+            {
+                @if (type != PlayType.BonusYahtzee || (type == PlayType.BonusYahtzee && PlaysMade.HasYahtzee()))
+                {
+                    <div class="row @(type == PlayType.BonusYahtzee ? "bg-warning" : "")">
+                        <div class="col-6 border border-dark font-weight-bold">
+                            @type.GetDisplayName()
+                            <i class="fa fa-question-circle" title="@type.GetDisplayDescription()"></i>
+                        </div>
+                        <div class="col-6 border border-dark p-1 min">
+                            @if (PlaysMade.HasPlay(type))
+                            {
+                                @PlaysMade.GetScore(type)
+                            }
+                            else if (CanMakePlay(type) && !IsStartOfTurn)
+                            {
+                                <a class="btn btn-primary btn-sm" @onclick="@(() => ClaimPlay(type))">Claim</a>
+                            }
+                            else if (RollsRemaining == 0)
+                            {
+                                <a class="btn btn-outline-secondary btn-sm" @onclick="@(() => ScratchPlay(type))">Scratch</a>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+            <div class="row">
+                <div class="col-6 border border-dark font-weight-bold">TOP SECTION BONUS <i class="fa fa-question-circle" title="If your scores for ones, twos, threes, fours, fives, and sixes total 63 or more, you get a 35 point bonus!"></i></div>
+                <div class="col-6 border border-dark p-1">
+                    @if (PlaysMade.HasBonus())
+                    {
+                        <text>35</text>
+                    }
+                    else
+                    {
+                        <text>0</text>
+                    }
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 border border-dark font-weight-bold">GRAND TOTAL</div>
+                <div class="col-6 border border-dark p-1">
+                    @TotalScore
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
