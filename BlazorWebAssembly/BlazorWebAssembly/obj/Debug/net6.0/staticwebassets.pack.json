@@ -17,12 +17,20 @@
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\app1.css",
+      "PackagePath": "staticwebassets\\css\\app1.css"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
       "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\games.css",
+      "PackagePath": "staticwebassets\\css\\games.css"
     },
     {
       "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
@@ -61,6 +69,10 @@
       "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\css\\prism.css",
+      "PackagePath": "staticwebassets\\css\\prism.css"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -69,12 +81,412 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\blackjack\\blackjack-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\blackjack\\blackjack-bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardBack.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardBack.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsAce.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsAce.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsEight.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsEight.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsFive.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsFive.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsFour.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsFour.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsJack.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsJack.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsKing.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsKing.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsNine.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsNine.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsQueen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsQueen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsSeven.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsSeven.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsSix.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsSix.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsTen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsTen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsThree.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsThree.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardClubsTwo.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardClubsTwo.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsAce.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsAce.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsEight.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsEight.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsFive.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsFive.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsFour.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsFour.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsJack.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsJack.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsKing.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsKing.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsNine.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsNine.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsQueen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsQueen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsSeven.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsSeven.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsSix.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsSix.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsTen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsTen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsThree.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsThree.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardDiamondsTwo.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardDiamondsTwo.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsAce.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsAce.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsEight.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsEight.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsFive.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsFive.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsFour.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsFour.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsJack.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsJack.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsKing.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsKing.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsNine.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsNine.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsQueen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsQueen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsSeven.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsSeven.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsSix.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsSix.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsTen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsTen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsThree.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsThree.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardHeartsTwo.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardHeartsTwo.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesAce.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesAce.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesEight.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesEight.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesFive.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesFive.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesFour.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesFour.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesJack.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesJack.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesKing.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesKing.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesNine.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesNine.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesQueen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesQueen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesSeven.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesSeven.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesSix.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesSix.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesTen.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesTen.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesThree.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesThree.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\common\\cardSpadesTwo.png",
+      "PackagePath": "staticwebassets\\images\\common\\cardSpadesTwo.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\connectfour\\connectfour-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\connectfour\\connectfour-bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\gameoflife\\gameoflife-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\gameoflife\\gameoflife-bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\gameoflife\\gameoflife-sprites.png",
+      "PackagePath": "staticwebassets\\images\\gameoflife\\gameoflife-sprites.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\minesweeper\\minesweeper-almost-done.png",
+      "PackagePath": "staticwebassets\\images\\minesweeper\\minesweeper-almost-done.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\minesweeper\\minesweeper-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\minesweeper\\minesweeper-bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\minesweeper\\minesweeper-example.png",
+      "PackagePath": "staticwebassets\\images\\minesweeper\\minesweeper-example.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\minesweeper\\minesweeper-flags.png",
+      "PackagePath": "staticwebassets\\images\\minesweeper\\minesweeper-flags.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\minesweeper\\minesweeper-neighbors.png",
+      "PackagePath": "staticwebassets\\images\\minesweeper\\minesweeper-neighbors.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\minesweeper\\sprite100.gif",
+      "PackagePath": "staticwebassets\\images\\minesweeper\\sprite100.gif"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\cardBack.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\cardBack.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\cardBackDashed.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\cardBackDashed.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\cardBackGrey.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\cardBackGrey.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\cardDashedClubs.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\cardDashedClubs.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\cardDashedDiamonds.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\cardDashedDiamonds.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\cardDashedHearts.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\cardDashedHearts.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\cardDashedSpades.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\cardDashedSpades.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\solitaire-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\solitaire\\solitaire-bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\solitaire\\tetris-part-5-header.jpg",
+      "PackagePath": "staticwebassets\\images\\solitaire\\tetris-part-5-header.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetris-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetris-bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-block.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-block.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-darkblue.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-darkblue.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-green.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-green.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-leftzigzag.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-leftzigzag.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-lightblue.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-lightblue.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-lshaped.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-lshaped.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-orange.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-orange.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-purple.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-purple.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-red.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-red.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-reverselshaped.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-reverselshaped.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-rightzigzag.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-rightzigzag.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-straight.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-straight.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-tshaped.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-tshaped.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tetris\\tetromino-yellow.png",
+      "PackagePath": "staticwebassets\\images\\tetris\\tetromino-yellow.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tictactoe\\letter-o.png",
+      "PackagePath": "staticwebassets\\images\\tictactoe\\letter-o.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tictactoe\\letter-x.png",
+      "PackagePath": "staticwebassets\\images\\tictactoe\\letter-x.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\tictactoe\\tictactoe-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\tictactoe\\tictactoe-bookmark.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\images\\yahtzee\\yahtzee-bookmark.png",
+      "PackagePath": "staticwebassets\\images\\yahtzee\\yahtzee-bookmark.png"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\js\\anchorlink.js",
+      "PackagePath": "staticwebassets\\js\\anchorlink.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\js\\minesweeper.js",
+      "PackagePath": "staticwebassets\\js\\minesweeper.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\js\\prism.js",
+      "PackagePath": "staticwebassets\\js\\prism.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\js\\utilities.js",
+      "PackagePath": "staticwebassets\\js\\utilities.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\service-worker.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.published.js"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\sitemap.xml",
+      "PackagePath": "staticwebassets\\sitemap.xml"
+    },
+    {
+      "Id": "C:\\Users\\Administrator\\source\\repos\\BlazorWebAssembly\\BlazorWebAssembly\\wwwroot\\sounds\\tetris-theme.ogg",
+      "PackagePath": "staticwebassets\\sounds\\tetris-theme.ogg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorWebAssembly.Microsoft.AspNetCore.StaticWebAssets.props",

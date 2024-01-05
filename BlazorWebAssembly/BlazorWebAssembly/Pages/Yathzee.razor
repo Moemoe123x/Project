@@ -1,7 +1,7 @@
 ﻿@page "/yathzee"
 @inject HttpClient Http
+@inject IJSRuntime JsRuntime
 
-<PageTitle Title="Yahtzee" />
 
 @using BlazorGames.Models.Yahtzee;
 @using BlazorGames.Models.Yahtzee.Enums;
@@ -39,6 +39,11 @@
         Initialize();
     }
 
+    public async void Alert()
+    {
+        bool confirmed = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure?");
+    }
+
     public void Initialize()
     {
         Dice.Reset();
@@ -50,6 +55,12 @@
 
     public async Task RollDice()
     {
+        if(RollsRemaining <= 0)
+        {
+            return;
+        }
+        Console.Write("Called Roll", Dice.Dice.Count);
+
         Random rand = new Random();
 
         var unheldDice = Dice.Dice.Where(x => x.IsHeld == false);
@@ -274,7 +285,7 @@
                             {
                                 <a class="btn btn-primary btn-sm" @onclick="@(() => ClaimPlay(type))">Claim</a>
                             }
-                            else if (RollsRemaining == 0)
+                            else if (RollsRemaining <= 0)
                             {
                                 <a class="btn btn-outline-secondary btn-sm" @onclick="@(() => ScratchPlay(type))">Scratch</a>
                             }
